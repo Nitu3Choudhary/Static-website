@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#Navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#Navbar::before{
+    content: "";
+    background-color:rgba(155, 155, 25, 0.966);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 55px;
+    margin: 3px,6px;
+}
+#Navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive; 
+}
+#Navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+
+}
+#Navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#Navbar ul li a:hover{
+    color: violet;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 11px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('agra.jpg') no-repeat center center/cover;
+    height: 550px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#home .btn{
+    color:white;
+    color: black;
+    background-color:red;
+}
+
+/* Services Section */
+#services{
+    display: grid;
+    grid-gap: 0.1rem;
+    grid-template-columns: 511px 511px 511px;
+    grid-template-columns: repeat(aut0-fit,minmax(300px,1fr));
+    justify-content: center;
+    margin: 25px;
+    
+    background-color: rgba(255, 127, 80, 0.705);
+}
+#services .Box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+
+}
+#services h3{
+    color: black;
+
+}
+
+#services .Box img{
+  
+  height: 200px;
+  width: 100%;
+  margin: auto;
+  display: block;
+
+
+}
+
+#services .Box p{
+    font-family: 'Bree Serif', serif;
+
+}
+ * {box-sizing:border-box}
+
+
+
+
+
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    color: white;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
